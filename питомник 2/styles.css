@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe5b4; 
+    color: #333;    
+}
+
+header {
+    background-color: #ff7f50; 
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #ff7f50;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-repeat: repeat;
+    position: relative;
+}
+
+.card {
+    background-color: #fff8e1; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 15px;
+    width: 250px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin-top: 10px;
+    text-align: center;
+    color: #ff7f50;
+}
+
+.card p {
+     padding:10px; 
+     font-size:.9em; 
+     text-align:center; 
+}
+
+footer {
+     background-color:#ff7f50; 
+     color:white; 
+     text-align:center; 
+     padding:20px; 
+}
+@media(max-width:768px){
+     .gallery{
+         flex-direction:center
+     }
+     .card{
+         width:auto
+     }
+}
+
+video {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    object-fit: contain;
+}
